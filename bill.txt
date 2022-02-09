@@ -1,0 +1,10 @@
+Bill for the Order placed
+Order ID: 10
+Client's ID: 7
+Client's Username: edu
+Order Date and Time: 03-06-2021 17:41:54
+
+Products Ordered: 
+Product's name: Miso Soup ; Price: 32
+Product's name: Chilled Cream of Celery Soup ; Price: 84
+Total price of the order: 116

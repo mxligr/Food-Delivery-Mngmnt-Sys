@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.EmployeeController">
+   <children>
+      <TextArea fx:id="employeeTextArea" prefHeight="200.0" prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#seeOrdersAction" text="See Orders" />
+      <Button mnemonicParsing="false" onAction="#switchToLogin" text="Back" />
+   </children>
+</VBox>

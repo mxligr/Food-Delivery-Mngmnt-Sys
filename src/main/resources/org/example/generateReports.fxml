@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.GenerateReportsController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#timeIntervalOfOrderPressed" text="Time Interval of Order" />
+            <TextField fx:id="startHourTextField" promptText="Start Hour" visible="false" />
+            <TextField fx:id="endHourTextField" promptText="End Hour" visible="false" />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#productsOrderedMoreThanPressed" text="Products Ordererd More Than" />
+            <TextField fx:id="prodOrderedMoreThanTextField" prefHeight="26.0" prefWidth="171.0" promptText="Specified Number Of Times" visible="false" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clientsPressed" text="Clients" />
+            <TextField fx:id="clientsMadeMoreThanTextField" prefHeight="26.0" prefWidth="178.0" promptText="Made more than X Orders" visible="false" />
+            <TextField fx:id="clientsMinimumOrderValueTextField" prefHeight="26.0" prefWidth="192.0" promptText="Value of Order was more than X" visible="false" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#productsOrderedInDayPressed" text="Products Ordered in Day" />
+            <TextField fx:id="dayOfOrderTextField" promptText="Specified Day" visible="false" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+      <TextArea fx:id="resultTextArea" prefHeight="200.0" prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#generateReport" text="Generate Report" />
+      <Button mnemonicParsing="false" onAction="#clearTextFields" text="Clear Text Fields" />
+      <Button mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</VBox>

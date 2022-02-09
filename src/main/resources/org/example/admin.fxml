@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AdminController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#refreshTable" text="Import Products" />
+            <Button mnemonicParsing="false" onAction="#goToCompView" text="View Composite Products" />
+            <Button mnemonicParsing="false" onAction="#goToCompCreate" text="Create Composite Product" />
+         </children>
+      </HBox>
+      <Text fx:id="messageText" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addButtonAction" text="Add Product" />
+            <Button mnemonicParsing="false" onAction="#modifyButtonAction" text="Modify Product" />
+            <Button mnemonicParsing="false" onAction="#deleteButtonAction" text="Delete Product" />
+         </children>
+      </HBox>
+       <TableView fx:id="productsTable" onMouseClicked="#getSelectedValues" prefHeight="200.0" prefWidth="600.0">
+           <columns>
+               <TableColumn fx:id="titleColumn" prefWidth="129.40000760555267" text="Title" />
+               <TableColumn fx:id="ratingColumn" prefWidth="66.60001373291016" text="Rating" />
+               <TableColumn fx:id="caloriesColumn" prefWidth="102.19998168945312" text="Calories" />
+               <TableColumn fx:id="proteinColumn" prefWidth="76.39999389648438" text="Protein" />
+               <TableColumn fx:id="fatColumn" prefWidth="71.0" text="Fat" />
+               <TableColumn fx:id="sodiumColumn" prefWidth="70.79995727539062" text="Sodium" />
+               <TableColumn fx:id="priceColumn" prefWidth="85.60003662109375" text="Price" />
+           </columns>
+       </TableView>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <TextField fx:id="titleField" promptText="Title" />
+            <TextField fx:id="ratingField" promptText="Rating" />
+            <TextField fx:id="caloriesField" promptText="Calories" />
+            <TextField fx:id="proteinField" promptText="Protein" />
+            <TextField fx:id="fatField" promptText="Fat" />
+            <TextField fx:id="sodiumField" promptText="Sodium" />
+            <TextField fx:id="priceField" promptText="Price" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#switchToLogin" text="Home" />
+                  <Button mnemonicParsing="false" onAction="#clearFieldsAction" text="Clear Fields" />
+                  <Button mnemonicParsing="false" onAction="#goToGenerateReports" text="Generate Reports" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.CompositeProductCreateController">
+   <children>
+      <TableView fx:id="productsTable" prefHeight="200.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="titleColumn" prefWidth="129.40000760555267" text="Title" />
+            <TableColumn fx:id="ratingColumn" prefWidth="66.60001373291016" text="Rating" />
+            <TableColumn fx:id="caloriesColumn" prefWidth="102.19998168945312" text="Calories" />
+            <TableColumn fx:id="proteinColumn" prefWidth="76.39999389648438" text="Protein" />
+            <TableColumn fx:id="fatColumn" prefWidth="71.0" text="Fat" />
+            <TableColumn fx:id="sodiumColumn" prefWidth="70.79995727539062" text="Sodium" />
+            <TableColumn fx:id="priceColumn" prefWidth="85.60003662109375" text="Price" />
+         </columns>
+      </TableView>
+      <Text fx:id="messageText" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="nameTextField" promptText="Name of Composite Product" />
+      <Button mnemonicParsing="false" onAction="#addToCompProd" text="Add to Composite Product" />
+      <Button mnemonicParsing="false" onAction="#finalizeCompProduct" text="Finalize Composite Product" />
+      <Button mnemonicParsing="false" onAction="#switchToLogin" text="Back" />
+   </children>
+</VBox>
