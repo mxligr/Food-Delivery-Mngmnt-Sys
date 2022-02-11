@@ -3,6 +3,7 @@ A food delivery management application for a catering company, developed for the
 
 In the application implemented in Java, the client can order products from the company's menu. <br>
 The system has three types of users that log in using a username and a password: administrator, regular employee, and client. <br>
+
 The administrator can: <br>
 • Import the initial set of products which will populate the menu from a .csv file. <br>
 • Manage the products from the menu: add/delete/modify products and create new products composed of several products (an example of composed product could be named “daily menu 1” composed of a soup, a steak, a garnish, and a dessert). <br>
@@ -19,6 +20,7 @@ The client can:<br>
 • Create an order consisting of several products – for each order the date and time will be persisted and a bill will be generated that will list the ordered products and the total price of the order. <br>
 
 The employee is notified each time a new order is performed (using the Observer Design Pattern) by a client so that it can prepare the delivery of the ordered dishes.<br>
+
 The data from the .csv is read using streams.<br>
 Lambda expressions and stream processing is used for generating the administrator specific reports and for search functionalities. <br>
 The Composite Design Pattern was used for modelling classes MenuItem, BaseProduct and CompositePorduct. <br>
