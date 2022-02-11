@@ -21,11 +21,11 @@ The client can:<br>
 
 The employee is notified each time a new order is performed (using the Observer Design Pattern) by a client so that it can prepare the delivery of the ordered dishes.<br>
 
-The data from the .csv is read using streams.<br>
-Lambda expressions and stream processing is used for generating the administrator specific reports and for search functionalities. <br>
-The Composite Design Pattern was used for modelling classes MenuItem, BaseProduct and CompositePorduct. <br>
-A bill is generated in a .txt format. <br>
-JavaDoc files can be generated for documenting the functionalities of the application. <br>
-Serialization is used to ensure the data necessary for the application is up to date. <br>
+- The data from the .csv is read using streams.<br>
+- Lambda expressions and stream processing is used for generating the administrator specific reports and for search functionalities. <br>
+- The Composite Design Pattern was used for modelling classes MenuItem, BaseProduct and CompositePorduct. <br>
+- A bill is generated in a .txt format. <br>
+- JavaDoc files can be generated for documenting the functionalities of the application. <br>
+- Serialization is used to ensure the data necessary for the application is up to date. <br>
 
 
